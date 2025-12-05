@@ -22,36 +22,36 @@
 # aqib.name="aqib"
 # print(aqib.name,aqib.language,aqib.salary)
 
-class account():
-    def __init__(self,name,age,balance):
-        print("welcome to jkbank")
-        self.name=name
-        self.age=age
-        self.balance=balance
+# class account():
+#     def __init__(self,name,age,balance):
+#         print("welcome to jkbank")
+#         self.name=name
+#         self.age=age
+#         self.balance=balance
     
-    def Balance(self):
-        print(self.balance)
-    def deposit(self,amount):
-        self.balance=self.balance+amount
-        return self.balance
-    def withdrawl(self,amount):
-        if amount>self.balance:
-            return ("insufficeint balance")
+#     def Balance(self):
+#         print(self.balance)
+#     def deposit(self,amount):
+#         self.balance=self.balance+amount
+#         return self.balance
+#     def withdrawl(self,amount):
+#         if amount>self.balance:
+#             return ("insufficeint balance")
             
-        else:
-            self.balance=self.balance-amount
-            return self.balance
-obj1=account("jamid",29,1000)
-print(obj1.name)
-print(obj1.balance)
-# print(obj1.deposit(1200))
-print(obj1.withdrawl(1200))
+#         else:
+#             self.balance=self.balance-amount
+#             return self.balance
+# obj1=account("jamid",29,1000)
+# print(obj1.name)
+# print(obj1.balance)
+# # print(obj1.deposit(1200))
+# print(obj1.withdrawl(1200))
 
-obj2=account("anayat",19,100000000)
-print(obj2.name)
-print(obj2.balance)
-# print(obj2.deposit(1200))
-print(obj2.withdrawl(1200))
+# obj2=account("anayat",19,100000000)
+# print(obj2.name)
+# print(obj2.balance)
+# # print(obj2.deposit(1200))
+# print(obj2.withdrawl(1200))
 
 
 
@@ -137,5 +137,42 @@ print(obj2.withdrawl(1200))
 # # r.show_color()
 # # print("Area:", r.area())
 
+books=[]
+class Book:
+    
+    def __init__(self,author,title):
+        self.author=author
+        self.title=title
+# books=[]
+    def add_book(self):
+            books.append(self)
+            print("books added succesfully")
+    @staticmethod
+    def remove_book(title):
+            for book in books:
+                if book.title==title:
+                    books.remove(book)
+                    print("succesfully removed")
+                else:
+                   print("book not found")
+    @staticmethod
+    
+    def display():
+            for book in books:
+                print(book.author , book.title)
 
-#DECORATOR 
+o1=Book("jamid","my book")
+o1.add_book()
+
+o2=Book("aqib","kashmiriayt")
+o2.add_book()
+Book.display()
+print(o1.title)
+print(o1.author)
+
+
+    
+
+
+        
+

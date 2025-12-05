@@ -1,31 +1,31 @@
-# friends=["jamid","aqib","anayat","gowhar","90"] # can store multiple date types
+friends=["jamid","aqib","anayat","gowhar","90"] # can store multiple date types
 
-# print(friends[2])
+print(friends[2])
 
-# friends[2]= "naveed"   #unlike strings lists are mutable we can change the valeue of list but the strings is not changed
+friends[2]= "naveed"   #unlike strings lists are mutable we can change the valeue of list but the strings is not changed
 
-# print(friends[2])
+print(friends[2])
 
-# print(friends[0:2])     # slicing is possible in lists also 
+print(friends[0:2])     # slicing is possible in lists also 
 
-# print(friends[0:4:2])   #slice with skip value 
+print(friends[0:4:2])   #slice with skip value 
 
 
 
-#list method
+list method
 
-# friends.append("sajid")
+friends.append("sajid")
 
-# print(friends)
-# friends[2]="anayat"
+print(friends)
+friends[2]="anayat"
 
-# L=["1","20","jam","1.20","aqii"] #sorting is only possibe when we have simmiller type of data as here is all strings
-# L.sort()
-# print(L)
-# L.reverse()
-# print(L)
-# L.insert(2,30)
-# print(L)
+L=["1","20","jam","1.20","aqii"] #sorting is only possibe when we have simmiller type of data as here is all strings
+L.sort()
+print(L)
+L.reverse()
+print(L)
+L.insert(2,30)
+print(L)
 #LARGERST NUMBER IN THE LIST
 L=[12,2,43,45,60,90,28]
 largest=L[0]

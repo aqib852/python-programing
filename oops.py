@@ -55,7 +55,7 @@ print(obj2.withdrawl(1200))
 
 
 
-inheritince Using super() to Extend Parent Method
+# inheritince Using super() to Extend Parent Method
 class Person:
     def show(self):
         print("I am a person.")

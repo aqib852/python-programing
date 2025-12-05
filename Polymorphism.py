@@ -1,5 +1,6 @@
 print(5 + 3)        # 8  → Addition
 print("A" + "B")    # AB → String concatenation
+# here same operator but different behavior
 
 
 
